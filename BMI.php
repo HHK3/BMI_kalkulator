@@ -21,7 +21,7 @@
 
             switch ($bmi) {
                 case $bmi < 0 :
-                    echo "<p style='color: red' class='bold'>Ongeldige BMI, probeer het opnieuw</p>";
+                    echo "<p style='color: red' class='bold'>Ongeldige BMI en/of geen valide/missende input, probeer het opnieuw</p>";
                     break;
                 case $bmi < 18.5:
                     echo "<p style='color: lightblue' class='bold'>Ondergewicht</p>";
@@ -42,7 +42,7 @@
                     echo "<p style='color: orangered' class='bold'>Morbide obesitas</p>";
                     break;
                 case $bmi >= 100:
-                    echo "<p style='color: red' class='bold'>Ongelde BMI, probeer opnieuw</p>";
+                    echo "<p style='color: red' class='bold'>Ongelde BMI en/of geen valide/missende input, probeer opnieuw</p>";
                     break;
                 default:
                     echo "<p style='color: red' class='bold'>Geen valide/missende input</p>";
